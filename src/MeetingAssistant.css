@@ -1,0 +1,141 @@
+
+.assistant-panel {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 360px;
+  max-height: 75vh;
+  overflow-y: auto;
+  padding: 20px;
+  border: 1px solid rgba(167, 139, 250, 0.3);
+  border-radius: 18px;
+  background: #11152a;
+  color: #f8fafc;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+
+.assistant-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.assistant-header h3 {
+  margin: 8px 0 4px;
+  font-size: 17px;
+}
+
+.assistant-header p {
+  color: #a5abc2;
+  font-size: 12px;
+  margin: 0;
+}
+
+.assistant-icon {
+  color: #c4a7ff;
+  font-size: 25px;
+}
+
+.assistant-status {
+  color: #a78bfa;
+  font-size: 10px;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.assistant-controls {
+  display: grid;
+  gap: 9px;
+  margin-bottom: 18px;
+}
+
+.assistant-panel button {
+  padding: 11px;
+  border: none;
+  border-radius: 9px;
+  background: linear-gradient(120deg, #7954dc, #a855f7);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.assistant-panel button:hover {
+  opacity: 0.88;
+}
+
+.assistant-panel .stop-button {
+  background: #b83250;
+}
+
+.assistant-section {
+  margin-top: 18px;
+}
+
+.assistant-section h4 {
+  font-size: 14px;
+  margin-bottom: 9px;
+}
+
+.assistant-section textarea {
+  width: 100%;
+  resize: vertical;
+  padding: 12px;
+  background: #090d1b;
+  border: 1px solid #303653;
+  border-radius: 9px;
+  color: white;
+  font: inherit;
+  font-size: 12px;
+  outline: none;
+}
+
+.assistant-section textarea:focus {
+  border-color: #a78bfa;
+}
+
+.assistant-output {
+  padding: 12px;
+  min-height: 65px;
+  white-space: pre-wrap;
+  line-height: 1.7;
+  font-size: 12px;
+  background: #090d1b;
+  border-radius: 9px;
+  color: #d9d9e8;
+}
+
+.assistant-section ul {
+  padding-left: 20px;
+  font-size: 12px;
+  line-height: 1.8;
+  color: #ddd6fe;
+}
+
+.empty-actions {
+  color: #8f96ad;
+  font-size: 12px;
+}
+
+.assistant-error {
+  color: #fca5a5;
+  font-size: 12px;
+}
+
+.assistant-panel .download-notes {
+  width: 100%;
+  margin-top: 18px;
+  background: #252c48;
+  border: 1px solid #555b7b;
+}
+
+@media (max-width: 600px) {
+  .assistant-panel {
+    width: calc(100% - 24px);
+    right: 12px;
+    bottom: 12px;
+    max-height: 65vh;
+  }
+}

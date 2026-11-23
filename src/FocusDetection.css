@@ -1,0 +1,35 @@
+
+.focus-detection {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 18px;
+  margin: 12px;
+  color: #25243a;
+  font-family: Arial, sans-serif;
+}
+
+.focus-detection h3 {
+  margin: 0 0 14px;
+  font-size: 17px;
+}
+
+.focus-status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  background: #f3f4f6;
+  border-radius: 9px;
+  font-weight: 600;
+}
+
+.focus-detection p {
+  color: #6b7280;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+.focus-hidden-video {
+  display: none;
+}
